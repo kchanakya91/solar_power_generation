@@ -1,0 +1,269 @@
+=== Run information ===
+
+Scheme:
+	timeseries.HoltWinters -alpha 0.2 -beta 0.2 -gamma 0.2 cycle-length 12
+
+Lagged and derived variable options:
+	-F Temperature -L 1 -M 36
+
+Relation:     Weather_data_usa_main
+Instances:    142
+Attributes:   2
+              Month
+              Temperature
+
+Transformed training data:
+
+              Temperature
+              ArtificialTimeIndex
+              Lag_Temperature-1
+              Lag_Temperature-2
+              Lag_Temperature-3
+              Lag_Temperature-4
+              Lag_Temperature-5
+              Lag_Temperature-6
+              Lag_Temperature-7
+              Lag_Temperature-8
+              Lag_Temperature-9
+              Lag_Temperature-10
+              Lag_Temperature-11
+              Lag_Temperature-12
+              Lag_Temperature-13
+              Lag_Temperature-14
+              Lag_Temperature-15
+              Lag_Temperature-16
+              Lag_Temperature-17
+              Lag_Temperature-18
+              Lag_Temperature-19
+              Lag_Temperature-20
+              Lag_Temperature-21
+              Lag_Temperature-22
+              Lag_Temperature-23
+              Lag_Temperature-24
+              Lag_Temperature-25
+              Lag_Temperature-26
+              Lag_Temperature-27
+              Lag_Temperature-28
+              Lag_Temperature-29
+              Lag_Temperature-30
+              Lag_Temperature-31
+              Lag_Temperature-32
+              Lag_Temperature-33
+              Lag_Temperature-34
+              Lag_Temperature-35
+              Lag_Temperature-36
+              ArtificialTimeIndex^2
+              ArtificialTimeIndex^3
+              ArtificialTimeIndex*Lag_Temperature-1
+              ArtificialTimeIndex*Lag_Temperature-2
+              ArtificialTimeIndex*Lag_Temperature-3
+              ArtificialTimeIndex*Lag_Temperature-4
+              ArtificialTimeIndex*Lag_Temperature-5
+              ArtificialTimeIndex*Lag_Temperature-6
+              ArtificialTimeIndex*Lag_Temperature-7
+              ArtificialTimeIndex*Lag_Temperature-8
+              ArtificialTimeIndex*Lag_Temperature-9
+              ArtificialTimeIndex*Lag_Temperature-10
+              ArtificialTimeIndex*Lag_Temperature-11
+              ArtificialTimeIndex*Lag_Temperature-12
+              ArtificialTimeIndex*Lag_Temperature-13
+              ArtificialTimeIndex*Lag_Temperature-14
+              ArtificialTimeIndex*Lag_Temperature-15
+              ArtificialTimeIndex*Lag_Temperature-16
+              ArtificialTimeIndex*Lag_Temperature-17
+              ArtificialTimeIndex*Lag_Temperature-18
+              ArtificialTimeIndex*Lag_Temperature-19
+              ArtificialTimeIndex*Lag_Temperature-20
+              ArtificialTimeIndex*Lag_Temperature-21
+              ArtificialTimeIndex*Lag_Temperature-22
+              ArtificialTimeIndex*Lag_Temperature-23
+              ArtificialTimeIndex*Lag_Temperature-24
+              ArtificialTimeIndex*Lag_Temperature-25
+              ArtificialTimeIndex*Lag_Temperature-26
+              ArtificialTimeIndex*Lag_Temperature-27
+              ArtificialTimeIndex*Lag_Temperature-28
+              ArtificialTimeIndex*Lag_Temperature-29
+              ArtificialTimeIndex*Lag_Temperature-30
+              ArtificialTimeIndex*Lag_Temperature-31
+              ArtificialTimeIndex*Lag_Temperature-32
+              ArtificialTimeIndex*Lag_Temperature-33
+              ArtificialTimeIndex*Lag_Temperature-34
+              ArtificialTimeIndex*Lag_Temperature-35
+              ArtificialTimeIndex*Lag_Temperature-36
+
+Temperature:
+Holt-Winters triple exponential smoothing.
+	Value smoothing factor: 0.2
+	Trend smoothing factor: 0.2
+	Seasonal smoothing factor: 0.2
+	Season cycle length: 12
+
+
+
+=== Future predictions from end of training data ===
+inst#     Temperature 
+1               30.67 
+2                31.8 
+3               43.57 
+4               53.24 
+5               59.88 
+6               70.48 
+7               74.71 
+8               74.05 
+9               66.49 
+10              56.14 
+11              42.31 
+12              32.47 
+13              29.71 
+14              33.04 
+15              43.07 
+16              51.96 
+17              59.13 
+18              69.82 
+19              76.14 
+20                 75 
+21              66.09 
+22              55.09 
+23              43.75 
+24               35.4 
+25              36.12 
+26              37.51 
+27              50.41 
+28              54.68 
+29              63.45 
+30              70.54 
+31              76.77 
+32               73.8 
+33              66.31 
+34              53.89 
+35              44.01 
+36              35.92 
+37              32.25 
+38              34.77 
+39              40.91 
+40              49.68 
+41              60.85 
+42              70.39 
+43              74.21 
+44              72.99 
+45              66.96 
+46              53.44 
+47              41.61 
+48              31.06 
+49              30.56 
+50              32.13 
+51              40.51 
+52              51.69 
+53              61.27 
+54              69.58 
+55              73.29 
+56              72.25 
+57               66.2 
+58              56.93 
+59              39.25 
+60              36.81 
+61              33.08 
+62              32.99 
+63              45.39 
+64              53.24 
+65              60.84 
+66              71.37 
+67              73.92 
+68              72.95 
+69              68.54 
+70              57.24 
+71               44.6 
+72              38.66 
+73              32.22 
+74              39.47 
+75               47.5 
+76              53.19 
+77              60.33 
+78              71.76 
+79              75.22 
+80              73.53 
+81              67.12 
+82              57.72 
+83              47.97 
+84              32.95 
+85              33.57 
+86              41.18 
+87              46.15 
+88               53.8 
+89              60.57 
+90              70.36 
+91               75.7 
+92              72.01 
+93              66.27 
+94              55.69 
+95              45.03 
+96              34.29 
+97              32.16 
+98              35.51 
+99              42.73 
+100             49.03 
+101             65.52 
+102             71.55 
+103             75.45 
+104             73.51 
+105             67.53 
+106             53.71 
+107             40.01 
+108             35.51 
+109             32.56 
+110             31.84 
+111             40.28 
+112             52.84 
+113             59.49 
+114             68.72 
+115             74.62 
+116             73.74 
+117             68.43 
+118             52.05 
+119             41.11 
+120             36.43 
+121             35.55 
+122             36.18 
+123             46.09 
+124             50.86 
+125             60.91 
+126             70.29 
+127             75.65 
+128              74.7 
+129             65.89 
+130             54.28 
+131             46.31 
+132             35.71 
+133             34.57 
+134              30.6 
+135             45.54 
+136             51.87 
+137             60.37 
+138             72.61 
+139             75.42 
+140             73.98 
+141             67.82 
+142             56.97 
+143*          42.0165 
+144*            36.28 
+145*          33.6286 
+146*           32.379 
+147*          42.1583 
+148*          53.8409 
+149*          61.0668 
+150*          71.0506 
+151*          76.5615 
+152*          75.6971 
+153*           70.282 
+154*          54.5919 
+
+=== Evaluation on training data ===
+Target                      1-step-ahead  2-steps-ahead  3-steps-ahead  4-steps-ahead  5-steps-ahead  6-steps-ahead  7-steps-ahead  8-steps-ahead  9-steps-ahead 10-steps-ahead 11-steps-ahead 12-steps-ahead
+=============================================================================================================================================================================================================
+Temperature
+  N                                  106            105            104            103            102            101            100             99             98             97             96             95
+  Mean absolute error             2.9096         3.2848         3.5275          3.752         3.9642         4.0269          3.795         3.6096         3.4711          3.351         3.1984         3.6163
+  Root mean squared error         3.6538         4.1326         4.4952          4.904         5.2407         5.2775         4.9593         4.5687         4.3848         4.1093         4.0057         4.7426
+
+Total number of instances: 142
+
